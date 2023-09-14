@@ -1,0 +1,9 @@
+.article_container {
+    column-count: 3;
+    column-rule: 2px solid black;
+    column-gap: 5%;
+}
+
+.thumbnail {
+    max-width: 90%;
+}
