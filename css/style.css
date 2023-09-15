@@ -6,6 +6,11 @@
 
 .thumbnail {
     max-width: 90%;
+    transition: all 2s ease;
+}
+
+.thumbnail:hover{
+    transform:scale(2);
 }
 
 .dinkus {
