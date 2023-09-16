@@ -1,15 +1,42 @@
+html {
+    background-color:seashell;
+    font-family: Times, serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black 0.25rem;
+}
+
+header > h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.dateBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+}
+
 .article_container {
     column-count: 3;
-    column-rule: 2px solid black;
+    column-rule: 0.125rem solid black;
     column-gap: 5%;
 }
 
 .thumbnail {
     max-width: 90%;
     transition: all 2s ease;
+    filter: contrast(350%) grayscale(90%);
 }
 
 .thumbnail:hover{
+    filter:none;
     transform:scale(2);
 }
 
