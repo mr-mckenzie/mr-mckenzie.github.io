@@ -8,18 +8,17 @@
 
 <body>
     <header>
-        <h1>The mr-mckenzie.github.io Chronicle</h1>
-        <h2>High-Tech Low-Down</h2>
+        <h1 id="title">The mr-mckenzie.github.io Chronicle</h1>
+        <h2>The High-Tech Low-Down</h2>
+
         <aside class="dateBox">
             <p id="date"></p>
             <p>&pound1.25</p>
+            <script src="js/dateScript.js"></script>
          </aside>
-        <script src="js/dateScript.js"></script>
     </header>
 
     <main>
-        <p>Welcome to mr-mckenzie.github.io</p>
-        <p>Please excuse the mess, this website is under construction.</p>
 
         <div class="article_container">
             <article>
@@ -40,10 +39,11 @@
                     postgreSQL database.
                 </p>
                 <p>Tech stack: Python, Flask, Jinja, PostgreSQL, CSS, JavaScript</p>
-                <div class="img_carousel">
+                <div class="image_box">
                     <img id="gravelTravelScreenshot" class="thumbnail" src="images/GravelTravelHome.png">
-                    <button id="previousButton">&#10094 Previous image</button>
-                    <button id="nextButton">Next image &#10095</button>
+                    <button id="previousButton" class="previousButton">&#10094</button>
+                    <button id="nextButton" class="nextButton">&#10095</button>
+                    <p><i>Gravel Travel</i> screenshot.</p>
                     <script src="js/buttonScript.js"></script>
                 </div>
                 <p><i>Gravel Travel</i> can be downloaded from <a
