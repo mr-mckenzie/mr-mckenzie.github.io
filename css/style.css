@@ -89,8 +89,7 @@ article > h2, article > h3 {
 }
 
 .image_box:hover{
-    filter:none;
-    transform:scale(2.5) translate(50%);
+    transform:scale(2) translate(33.3%);
 }
 
 .dinkus {
