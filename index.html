@@ -3,16 +3,177 @@
 
 <head>
     <title>mr-mckenzie.github.io</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>mr-mckenzie.githut.io</h1>
+        <h1 id="title">The <span id="io">mr-mckenzie.github.io</span> Chronicle</h1>
+        <h2>A High-Tech Low-Down</h2>
+
+        <aside class="dateBox">
+            <p id="date"></p>
+            <p>&pound1.25</p>
+            <script src="js/dateScript.js"></script>
+         </aside>
     </header>
 
     <main>
-        <p>Welcome to mr-mckenzie.github.io</p>
-        <p>Please excuse the mess, this website is under construction.</p>
+
+        <div class="article_container">
+            <article>
+                <h2>Gravel Travel</h2>
+                <h3>A gritty travel wishlist</h3>
+                <p>
+                    A solo project and my very first full stack app. <i>Gravel Travel</i> is a travel wishlist app where
+                    a user can track countries and locations they would like to visit and log trips to locations they
+                    have visited.
+                </p>
+                <p>
+                    Initially completed over just a single week a third of the way into my course at CodeClan. I decided
+                    to return to <i>Gravel Travel</i> after graduating as a chance to revisit Python & SQL, apply the
+                    knowledge I had gained during the remiainder of the course to overhaul the app as well as to add
+                    gain some completely new skills.
+                </p>
+                <p>
+                    The project was a chance to work on object oriented programming with Python, web programming using
+                    the model-view-controller design pattern, build RESTful routes and perform CRUD actions with a
+                    postgreSQL database.
+                </p>
+                <p>Tech stack: Python, Flask, Jinja, PostgreSQL, CSS, JavaScript</p>
+                <div class="image_box" id="image-box">
+                    <img id="gravel-travel-screenshot" class="thumbnail" src="images/GravelTravelHome.png">
+                    <button id="previous-button" class="previousButton">&#10094</button>
+                    <button id="next-button" class="nextButton">&#10095</button>
+                    <p class="caption">Screenshot of <i>Gravel Travel</i></p>
+                    <script src="js/imageScript.js"></script>
+                </div>
+                <p><i>Gravel Travel</i> can be downloaded from <a
+                        href="https://github.com/mr-mckenzie/Gravel-Travel">GitHub</a>.</p>
+            </article>
+
+            <p class="dinkus">* * * * *</p>
+
+            <article>
+                <h2>Virtual Art Gallery</h2>
+                <h3>Discover Chicago's masterpieces</h3>
+                <p>
+                    A JavaScript React app using The Art Institute of Chicago's <a href="https://www.artic.edu/open-access/public-api">public API</a>. Started life as a mob
+                    programming exercise to create a multi-component web application with React.js and practice making API requests
+                    to load JSON data into an application. The first version was built in a single day with two of my
+                    fellow students.
+                </p>
+                <p>
+                    I refactored the code as a solo exercise and restyled it in the manner of a work of art hanging on a
+                    gallery wall (complete with artwork label). One aspect of the styling that I am particularly proud
+                    of is that the wall colour changes to complement the artwork that is loaded.
+                </p>
+                <p>Tech stack: JavaScript, React.js, HTML, CSS</p>
+                <!-- <img> -->
+                <!-- <a href="/Virtual-Art-Gallery">Virtual Art Gallery</a> -->
+            </article>
+
+            <p class="dinkus">* * * * *</p>
+
+            <article>
+                <h2>AeroSure?</h2>
+                <h3>Predicting weather-based delays for your flight</h3>
+                <p>
+                    A full stack React.js app using the Open-Meteo's free <a
+                        href="https://open-meteo.com/en/docs">Weather Forecast</a> and <a
+                        href="https://open-meteo.com/en/docs/geocoding-api">Geocoding</a> APIs. Produced in a single
+                    week as part of a three person group project.
+                </p>
+                <p>
+                    <i>AeroSure?</i> is a weather delay prediction tool. The user enters their flight's details (i.e.
+                    departure and arrival locations and times). The locations are entered as stings and converted into
+                    geographic coordinates using the geocoding API, these coordinates are then fed into the forecast API
+                    which returns hourly weather forecasts at each location. Logic is then performed which determines if
+                    adverse weather conditions (such as thunder, hail or heavy winds) near the departure and arrival
+                    times could cause a delay to the flight. A graded traffic light system is used to output a simple
+                    prediction to the user.
+                </p>
+                <p>
+                    This was my first app created as part of a team and was a perfect opportuniy to explore agile
+                    working methods. Some of the practices we adopted to improve productivity and cohesion were daily
+                    stand ups, mob programming and a final project retrospective.
+                </p>
+                <p>
+                    Integrating two separate API requests into the logic of the app was a big learning curve and
+                    significantly improved my confidence and practical ability of using APIs.
+                </p>
+                <p>Tech stack: JavaScript, React.js, MongoDB, Express.js, HTML, CSS</p>
+                <!-- <img> -->
+                <!-- <a href="AeroSure">AeroSure?</a> -->
+                <p>Explore <i>AeroSure?</i> on <a href="https://github.com/mr-mckenzie/AeroSure">GitHub</a>.</p>
+            </article>
+
+            <p class="dinkus">* * * * *</p>
+
+            <article>
+                <h2>Abstract</h2>
+                <h3>The joy of pixels</h3>
+                <p>
+                    A React.js app which draws abstract images via randomly generated coloured brushstrokes. A solo
+                    project.
+                </p>
+                <p>
+                    This small app began as a test to see if I could generate abstract images in real time. The first
+                    version used divs and unsurprisingly the browser significantly slowed down once several hundred divs
+                    had been generated. Looking for an alternative solution I discovered the canvas element and
+                    refactored the code but at the same time tried to keep the aesthetic and feel of the original div
+                    based styling.
+                </p>
+                <p>
+                    I later added some controlls for interactivity that allow the user to change several input
+                    parameters such as the size of the generated dots or the frequency of colour cycling.
+                </p>
+                <p>Tech stack: JavaScript, React.js, HTML</p>
+                <!-- <img> -->
+                <!-- <a href="/Abstract">Abstract</a> -->
+                <p>Explore <i>Abstract</i> on <a href="https://github.com/mr-mckenzie/Abstract">GitHub</a>.</p>
+            </article>
+
+            <p class="dinkus">* * * * *</p>
+
+            <article>
+                <!-- <h2>Wish/Watch</h2> -->
+                <h2>Film Wishlist</h2>
+                <h3>Rate your films and find new favourites</h3>
+                <p>
+                    Full-stack single-page React.js app for rating films and saving films to a wish list. Generates and
+                    outputs stats based on those ratings (such as most watched actors or highest rated genre) which are
+                    used to recommend new films to discover. A pair project completed in a two week timeframe.
+                </p>
+                <p>
+                    This was my first exposure to using external component libraries. Material UI was used for the form
+                    elements. The design and particularly the way the user navigates between pages is a major feature
+                    and it behaves in an unusual way to most web apps.
+                </p>
+                <p>
+                    Lots of practice with Git branches and merging.
+                </p>
+                <p>Tech stack: JavaScript, React.js, MongoDB, Express.js, HTML, CSS</p>
+                <!-- <img> -->
+                <!-- <a href="/WishWatch">WishWatch</a> -->
+                <!-- <a href="/Film-Wishlist">Film Wishlist</a> -->
+                <p>Explore <i>Film Wishlist</i> on <a href="https://github.com/mr-mckenzie/Film-Wishlist">GitHub</a>.
+                </p>
+            </article>
+
+            <!-- <article>
+                <h2>The Pomodoro Technique</h2>
+                <h3>Tomato power</h3>
+                <p>
+                    I have been a practicer of the pomodoro technique since my first solo project. In essence it is a tool to manage time and enhance productivity through regular breaks. I continue to use this practice while developing and find it to be hugely beneficial.
+                </p>
+            </article> -->
+        </div>
+
     </main>
 </body>
 

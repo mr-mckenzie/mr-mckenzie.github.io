@@ -1,0 +1,98 @@
+html {
+    background-color:snow;
+    font-family: Times, serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+}
+
+header > h2 {
+    margin-top: 0.25rem;
+}
+
+#title {
+    /* font-family: 'Bokor'; */
+    font-family: 'UnifrakturCook';
+    color:darkblue;
+}
+
+#io {
+    font-family: Times, serif;
+}
+
+.dateBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0.125rem;
+    border-top: solid black 0.25rem;
+    margin-bottom: 1rem;
+    border-bottom: solid black 0.25rem;
+}
+
+/* MAIN */
+
+.article_container {
+    column-count: 3;
+    column-rule: 0.125rem solid black;
+    column-gap: 5%;
+}
+
+article > h2, article > h3 {
+    color: darkblue;
+    text-align: center;
+}
+
+.image_box {
+    position: relative;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 0.125rem;
+    padding: 0.5rem 0.75rem;
+    transition: all 2s ease;
+}
+
+.nextButton {
+    position: absolute;
+    top: 50%;
+    right: 0.25rem;
+}
+
+.previousButton {
+    position: absolute;
+    top: 50%;
+    left: 0.25rem;
+}
+
+.thumbnail {
+    max-width: 90%;
+    filter: contrast(350%) grayscale(90%);
+}
+
+.caption {
+    margin: 0.25rem 0 0;
+}
+
+.image_box:hover{
+    filter:none;
+    transform:scale(2.5) translate(50%);
+}
+
+.dinkus {
+    text-align: center;
+}
