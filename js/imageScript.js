@@ -24,11 +24,9 @@ previousScreenshotButton.addEventListener("click", () => {
 });
 
 imageBox.addEventListener("pointerover", () => {
-    console.log("fired")
     gravelTravelScreenshot.style.filter = "none"
 });
 
 imageBox.addEventListener("pointerout", () => {
-    console.log("fired2")
     gravelTravelScreenshot.style.filter = null
 });
