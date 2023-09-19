@@ -51,6 +51,23 @@ header > h2 {
     column-gap: 5%;
 }
 
+@media screen and (max-width:1024px){
+    .article_container{
+        column-count: 2;
+        column-rule: 0.125rem solid black;
+        column-gap: 5%;
+    }
+}
+
+@media screen and (max-width:480){
+    .article_container{
+        column-count: 1;
+        column-rule: 0.125rem solid black;
+        column-gap: 5%;
+    }
+    
+}
+
 article > h2, article > h3 {
     color: darkblue;
     text-align: center;
@@ -81,16 +98,16 @@ article > h2, article > h3 {
 
 .thumbnail {
     max-width: 90%;
-    filter: contrast(350%) grayscale(90%);
+    /* filter: contrast(350%) grayscale(90%); */
 }
 
 .caption {
     margin: 0.25rem 0 0;
 }
 
-.image_box:hover{
+/* .image_box:hover{
     transform:scale(2) translate(33.3%);
-}
+} */
 
 .dinkus {
     text-align: center;

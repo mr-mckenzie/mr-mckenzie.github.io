@@ -7,7 +7,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=UnifrakturCook:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <p id="date"></p>
             <p>&pound1.25</p>
             <script src="js/dateScript.js"></script>
-         </aside>
+        </aside>
     </header>
 
     <main>
@@ -33,6 +34,13 @@
                     a user can track countries and locations they would like to visit and log trips to locations they
                     have visited.
                 </p>
+                <div class="image_box" id="image-box">
+                    <img id="gravel-travel-screenshot" class="thumbnail" src="images/GravelTravelHome.png">
+                    <button id="previous-button" class="previousButton">&#10094</button>
+                    <button id="next-button" class="nextButton">&#10095</button>
+                    <p class="caption">Screenshot of <i>Gravel Travel</i></p>
+                    <script src="js/imageScript.js"></script>
+                </div>
                 <p>
                     Initially completed over just a single week a third of the way into my course at CodeClan. I decided
                     to return to <i>Gravel Travel</i> after graduating as a chance to revisit Python & SQL, apply the
@@ -45,25 +53,20 @@
                     postgreSQL database.
                 </p>
                 <p>Tech stack: Python, Flask, Jinja, PostgreSQL, CSS, JavaScript</p>
-                <div class="image_box" id="image-box">
-                    <img id="gravel-travel-screenshot" class="thumbnail" src="images/GravelTravelHome.png">
-                    <button id="previous-button" class="previousButton">&#10094</button>
-                    <button id="next-button" class="nextButton">&#10095</button>
-                    <p class="caption">Screenshot of <i>Gravel Travel</i></p>
-                    <script src="js/imageScript.js"></script>
-                </div>
                 <p><i>Gravel Travel</i> can be downloaded from <a
                         href="https://github.com/mr-mckenzie/Gravel-Travel">GitHub</a>.</p>
             </article>
 
             <p class="dinkus">* * * * *</p>
 
-            <article>
+            <!-- <article>
                 <h2>Virtual Art Gallery</h2>
                 <h3>Discover Chicago's masterpieces</h3>
                 <p>
-                    A JavaScript React app using The Art Institute of Chicago's <a href="https://www.artic.edu/open-access/public-api">public API</a>. Started life as a mob
-                    programming exercise to create a multi-component web application with React.js and practice making API requests
+                    A JavaScript React app using The Art Institute of Chicago's <a
+                        href="https://www.artic.edu/open-access/public-api">public API</a>. Started life as a mob
+                    programming exercise to create a multi-component web application with React.js and practice making
+                    API requests
                     to load JSON data into an application. The first version was built in a single day with two of my
                     fellow students.
                 </p>
@@ -73,14 +76,15 @@
                     of is that the wall colour changes to complement the artwork that is loaded.
                 </p>
                 <p>Tech stack: JavaScript, React.js, HTML, CSS</p>
-                <!-- <img> -->
-                <!-- <a href="/Virtual-Art-Gallery">Virtual Art Gallery</a> -->
-                <p>Explore <i>Virtual Art Gallery</i> on <a href="https://github.com/mr-mckenzie/Virtual-Art-Gallery">GitHub</a>.</p>
-            </article>
+                <img>
+                <a href="/Virtual-Art-Gallery">Virtual Art Gallery</a>
+                <p>Explore <i>Virtual Art Gallery</i> on <a
+                        href="https://github.com/mr-mckenzie/Virtual-Art-Gallery">GitHub</a>.</p>
+            </article> -->
 
-            <p class="dinkus">* * * * *</p>
+            <!-- <p class="dinkus">* * * * *</p> -->
 
-            <article>
+            <!-- <article>
                 <h2>AeroSure?</h2>
                 <h3>Predicting weather-based delays for your flight</h3>
                 <p>
@@ -108,41 +112,49 @@
                     significantly improved my confidence and practical ability of using APIs.
                 </p>
                 <p>Tech stack: JavaScript, React.js, MongoDB, Express.js, HTML, CSS</p>
-                <!-- <img> -->
-                <!-- <a href="AeroSure">AeroSure?</a> -->
+                <img>
+                <a href="/AeroSure">AeroSure?</a>
                 <p>Explore <i>AeroSure?</i> on <a href="https://github.com/mr-mckenzie/AeroSure">GitHub</a>.</p>
-            </article>
+            </article> -->
 
-            <p class="dinkus">* * * * *</p>
+            <!-- <p class="dinkus">* * * * *</p> -->
 
             <article>
                 <h2>Abstract</h2>
                 <h3>The joy of pixels</h3>
                 <p>
-                    A React.js app which draws abstract images via randomly generated coloured brushstrokes. A solo
-                    project.
+                    A solo-developed React.js app which creates abstract images via randomly generated coloured dots.
+                    <i>Abstract</i> is my first project to be <a href="/Abstract">hosted online</a>.
                 </p>
                 <p>
-                    This small app began as a test to see if I could generate abstract images in real time. The first
-                    version used divs and unsurprisingly the browser significantly slowed down once several hundred divs
-                    had been generated. Looking for an alternative solution I discovered the canvas element and
-                    refactored the code but at the same time tried to keep the aesthetic and feel of the original div
-                    based styling.
+                    <i>Abstract</i> began as an experiment to create abstract images in real-time. The first
+                    version generated a series of &ltdiv&gt elements in random positions on a browser display and
+                    unsurprisingly the app performance struggled with higher numbers of &ltdiv&gts. I found an
+                    alternative solution by using the &ltcanvas&gt element but enjoyed the &ltdiv&gt aesthetic
+                    so tried to retain as much of the original styling as possible.
                 </p>
                 <p>
-                    I later added some controlls for interactivity that allow the user to change several input
-                    parameters such as the size of the generated dots or the frequency of colour cycling.
+                    The newest version of <i>Abstract</i> adds some user interactivity via controls to change several input
+                    parameters such as dot size or the rate of the colour change. A handful of presets are also available to
+                    showcase the different capabilities of the dot generating algorithm.
                 </p>
-                <p>Tech stack: JavaScript, React.js, HTML</p>
-                <!-- <img> -->
-                <!-- <a href="/Abstract">Abstract</a> -->
+                <div class="image_box" id="image-box-abstract">
+                    <img id="abstract-screenshot" class="thumbnail" src="images/Abstact.png">
+                    <p class="caption"> Image generation in progress with <i>Abstract</i></p>
+                </div>
+                <p>
+                    Hosting an app online is certainly a big milestone in the life of a developer, however the deployment 
+                    of <i>Abstract</i> brought problems that I was unable to anticipate from the comfort of my own hardware setup. 
+                    One example adjustment I made was to add CSS media queries to optimise the app on smaller screens such as mobile devices.
+                </p>
+                <p>Tech stack: JavaScript, React.js, HTML, CSS</p>
                 <p>Explore <i>Abstract</i> on <a href="https://github.com/mr-mckenzie/Abstract">GitHub</a>.</p>
             </article>
 
-            <p class="dinkus">* * * * *</p>
+            <!-- <p class="dinkus">* * * * *</p> -->
 
-            <article>
-                <!-- <h2>Wish/Watch</h2> -->
+            <!-- <article>
+                <h2>Wish/Watch</h2>
                 <h2>Film Wishlist</h2>
                 <h3>Rate your films and find new favourites</h3>
                 <p>
@@ -159,12 +171,12 @@
                     Lots of practice with Git branches and merging.
                 </p>
                 <p>Tech stack: JavaScript, React.js, MongoDB, Express.js, HTML, CSS</p>
-                <!-- <img> -->
-                <!-- <a href="/WishWatch">WishWatch</a> -->
-                <!-- <a href="/Film-Wishlist">Film Wishlist</a> -->
+                <img>
+                <a href="/WishWatch">WishWatch</a>
+                <a href="/Film-Wishlist">Film Wishlist</a>
                 <p>Explore <i>Film Wishlist</i> on <a href="https://github.com/mr-mckenzie/Film-Wishlist">GitHub</a>.
                 </p>
-            </article>
+            </article> -->
 
             <!-- <article>
                 <h2>The Pomodoro Technique</h2>
