@@ -84,24 +84,68 @@
 
             <!-- <p class="dinkus">* * * * *</p> -->
 
-            <!-- <article>
-                <h2>AeroSure?</h2>
+            <article>
+                <h2>Abstract</h2>
+                <h3>The joy of pixels</h3>
+                <p>
+                    A solo-developed React.js app which creates abstract images via randomly generated coloured dots.
+                    <i>Abstract</i> is my first project to be <a href="/Abstract">hosted online</a>.
+                </p>
+                <p>
+                    <i>Abstract</i> began as an experiment to generate abstract images in real-time. The first
+                    version poulated a series of &ltdiv&gt elements in random positions on a browser display and
+                    unsurprisingly the app performance struggled with higher numbers of &ltdiv&gts. I found an
+                    alternative solution by using the &ltcanvas&gt element but enjoyed the &ltdiv&gt aesthetic
+                    so tried to retain as much of the original styling as possible.
+                </p>
+                <p>
+                    The newest version of <i>Abstract</i> adds user interactivity via controls to change several input
+                    parameters such as dot size or the rate of the colour change. A handful of presets are also available to
+                    showcase the different capabilities of the dot generating algorithm.
+                </p>
+                <div class="image_box" id="image-box-abstract">
+                    <img id="abstract-screenshot" class="thumbnail" src="images/Abstact.png">
+                    <p class="caption"> Image generation in progress with <i>Abstract</i></p>
+                </div>
+                <p>
+                    Hosting an app online is certainly a big milestone in the life of a developer, however the deployment 
+                    of <i>Abstract</i> brought problems that I was unable to anticipate from the comfort of my own hardware setup. 
+                    I made some significant adjustments to the user interface to improve accessibility and user experience. Some of the changes include:
+                    <ul>
+                        <li>using CSS media queries to adjust the display on smaller screens</li>
+                        <li>restyling the buttons to give bigger hit areas</li>
+                        <li>relabelling the inputs to better define their purposes</li>
+                    </ul>
+                </p>
+                <p>Tech stack: JavaScript, React.js, HTML, CSS</p>
+                <p>Explore <i>Abstract</i> on <a href="https://github.com/mr-mckenzie/Abstract">GitHub</a>.</p>
+                <p>Try it out in your <a href="/Abstract">browser</a>.</p>
+            </article>
+
+            <p class="dinkus">* * * * *</p>
+
+            <article>
+                <h2>AeroSure</h2>
                 <h3>Predicting weather-based delays for your flight</h3>
                 <p>
-                    A full stack React.js app using the Open-Meteo's free <a
+                    A full stack React.js app using the Open-Meteo.com <a
                         href="https://open-meteo.com/en/docs">Weather Forecast</a> and <a
                         href="https://open-meteo.com/en/docs/geocoding-api">Geocoding</a> APIs. Produced in a single
                     week as part of a three person group project.
                 </p>
                 <p>
-                    <i>AeroSure?</i> is a weather delay prediction tool. The user enters their flight's details (i.e.
+                    <i>AeroSure</i> is a weather delay prediction tool. The user enters their flight's details (i.e.
                     departure and arrival locations and times). The locations are entered as stings and converted into
-                    geographic coordinates using the geocoding API, these coordinates are then fed into the forecast API
+                    geographic coordinates using the geocoding API, these coordinates are then fed into the weather API
                     which returns hourly weather forecasts at each location. Logic is then performed which determines if
-                    adverse weather conditions (such as thunder, hail or heavy winds) near the departure and arrival
+                    any adverse weather conditions (such as thunder, hail or heavy winds) near the departure and arrival
                     times could cause a delay to the flight. A graded traffic light system is used to output a simple
                     prediction to the user.
                 </p>
+                <div class="image_box" id="image-box-aerosure">
+                    <img id="aerosure-screenshot" class="thumbnail" src="images/Aerosure.png">
+                    <p class="caption"> An <i>AeroSure</i> flight prediction</p>
+                </div>
                 <p>
                     This was my first app created as part of a team and was a perfect opportuniy to explore agile
                     working methods. Some of the practices we adopted to improve productivity and cohesion were daily
@@ -113,42 +157,9 @@
                 </p>
                 <p>Tech stack: JavaScript, React.js, MongoDB, Express.js, HTML, CSS</p>
                 <img>
-                <a href="/AeroSure">AeroSure?</a>
-                <p>Explore <i>AeroSure?</i> on <a href="https://github.com/mr-mckenzie/AeroSure">GitHub</a>.</p>
-            </article> -->
-
-            <!-- <p class="dinkus">* * * * *</p> -->
-
-            <article>
-                <h2>Abstract</h2>
-                <h3>The joy of pixels</h3>
-                <p>
-                    A solo-developed React.js app which creates abstract images via randomly generated coloured dots.
-                    <i>Abstract</i> is my first project to be <a href="/Abstract">hosted online</a>.
-                </p>
-                <p>
-                    <i>Abstract</i> began as an experiment to create abstract images in real-time. The first
-                    version generated a series of &ltdiv&gt elements in random positions on a browser display and
-                    unsurprisingly the app performance struggled with higher numbers of &ltdiv&gts. I found an
-                    alternative solution by using the &ltcanvas&gt element but enjoyed the &ltdiv&gt aesthetic
-                    so tried to retain as much of the original styling as possible.
-                </p>
-                <p>
-                    The newest version of <i>Abstract</i> adds some user interactivity via controls to change several input
-                    parameters such as dot size or the rate of the colour change. A handful of presets are also available to
-                    showcase the different capabilities of the dot generating algorithm.
-                </p>
-                <div class="image_box" id="image-box-abstract">
-                    <img id="abstract-screenshot" class="thumbnail" src="images/Abstact.png">
-                    <p class="caption"> Image generation in progress with <i>Abstract</i></p>
-                </div>
-                <p>
-                    Hosting an app online is certainly a big milestone in the life of a developer, however the deployment 
-                    of <i>Abstract</i> brought problems that I was unable to anticipate from the comfort of my own hardware setup. 
-                    One example adjustment I made was to add CSS media queries to optimise the app on smaller screens such as mobile devices.
-                </p>
-                <p>Tech stack: JavaScript, React.js, HTML, CSS</p>
-                <p>Explore <i>Abstract</i> on <a href="https://github.com/mr-mckenzie/Abstract">GitHub</a>.</p>
+                <a href="/AeroSure">AeroSure</a>
+                <p>Explore <i>AeroSure</i> on <a href="https://github.com/mr-mckenzie/AeroSure">GitHub</a>.</p>
+                <p><i>AeroSure</i> is <a href="/AeroSure">hosted online</a> in a simplified version with no backend functionality.</p>
             </article>
 
             <!-- <p class="dinkus">* * * * *</p> -->
